@@ -36,7 +36,9 @@ Environment: Jupyter Notebook
 
 ## 📁 Repository Structure
 Statistical-Business-Analysis/
+
 │
+
 ├── statistical_analysis.ipynb     # Main analysis notebook (Day 1–Day 7 workflow)
 
 ├── sales_data.csv                # Sales dataset
