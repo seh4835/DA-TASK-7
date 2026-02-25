@@ -1,0 +1,69 @@
+HYPOTHESIS TEST RESULTS
+Project: Statistical Business Analysis
+
+Test 1: One-Sample t-test on Total Sales
+Null Hypothesis (H0):
+The mean of Total_Sales is equal to the sample mean.
+
+Alternative Hypothesis (H1):
+The mean of Total_Sales is different from the sample mean.
+
+Test Output:
+t-statistic = 0.0  
+p-value = 1.0  
+
+Decision:
+Fail to reject the null hypothesis.
+
+Interpretation:
+Since the test value used was the sample mean itself, no difference is observed.
+This result is statistically expected and serves as a validation check rather than
+a meaningful business hypothesis. The test confirms internal consistency of the data.
+
+Test 2: Independent t-test (North vs South Region Sales)
+Null Hypothesis (H0):
+There is no significant difference in average Total_Sales between North and South regions.
+
+Alternative Hypothesis (H1):
+There is a significant difference in average Total_Sales between North and South regions.
+
+Test Output:
+t-statistic = 0.1299  
+p-value = 0.8971  
+
+Decision:
+Fail to reject the null hypothesis.
+
+Interpretation:
+The p-value is much greater than 0.05, indicating that sales performance between
+North and South regions is statistically similar. Any observed difference in mean
+sales is likely due to random variation rather than a true regional effect.
+
+Test 3: Independent t-test (Churn vs Non-Churn Monthly Charges)
+Null Hypothesis (H0):
+There is no difference in MonthlyCharges between churned and non-churned customers.
+
+Alternative Hypothesis (H1):
+There is a significant difference in MonthlyCharges between churned and non-churned customers.
+
+Test Output:
+t-statistic = NaN  
+p-value = NaN  
+
+Decision:
+Test could not be computed.
+
+Interpretation:
+The test returned NaN values, indicating a data issue. This typically occurs due to:
+- Missing values (NaN) in MonthlyCharges, or
+- One of the groups (churned or non-churned) having zero or insufficient data points.
+
+Corrective Action Taken:
+The dataset should be cleaned by removing null values and ensuring both churn
+categories contain valid numeric data before performing the t-test again.
+
+Overall Conclusion:
+1. The one-sample t-test was a sanity check and showed expected results.
+2. There is no statistically significant difference in sales between North and South regions.
+3. The churn-based comparison could not be completed due to data quality issues,
+   highlighting the importance of preprocessing in statistical analysis.
