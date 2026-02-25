@@ -38,11 +38,17 @@ Environment: Jupyter Notebook
 Statistical-Business-Analysis/
 │
 ├── statistical_analysis.ipynb     # Main analysis notebook (Day 1–Day 7 workflow)
+
 ├── sales_data.csv                # Sales dataset
+
 ├── customer_churn.csv            # Customer churn dataset
+
 ├── statistical_report.pdf        # Detailed methodology and results report
+
 ├── hypothesis_tests_results.txt  # Hypothesis test outputs & interpretations
+
 ├── requirements.txt              # Python dependencies
+
 └── README.md                     # Project documentation
 
 ## ⚙️ Setup Instructions
